@@ -5,7 +5,7 @@ You can add diaries,plans and images.
 ==============
 web Diary
 ==============
-"
+"""
 +---------------+----------------+
 |               |     역할      |
 +===============+================+
@@ -19,4 +19,4 @@ web Diary
 |jinhalim
 |aldehf420
 |Channny
-"
+"""
