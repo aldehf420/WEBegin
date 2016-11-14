@@ -6,11 +6,11 @@ You can add diaries,plans and images.
 web Diary
 ==============
 
- name   | 역할
---------|-------------------
-aldehf420|front-end
-jin hailm|App Development
-Channny|disign
+이름| id   | 역할           
+-----|--------|-------------------
+고동현|aldehf420|front-end
+진하림|jin hailm|App Development
+권채은|Channny|disign
 
 ###Member
 |jinhalim
