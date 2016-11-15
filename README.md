@@ -12,9 +12,5 @@ web Diary
 진하림|jin hailm|App Development
 권채은|Channny|disign
 
-###Member
-|jinhalim
-|aldehf420
-|Channny
 
 <img src = "https://github.com/aldehf420/WEBegin/blob/master/photo-1456324504439-367cee3b3c32.jpeg"heght="200" >
