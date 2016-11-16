@@ -2,12 +2,13 @@
 ##Team Name : #15-USS Thirtyfive<br />                 					  Team Goal : Make a great web<br />Team Members
 Name| ID   | Role           
 -----|--------|-------------------
-고동현|aldehf420|Front-end,documentation
+고동현|aldehf420|Front-end,Documentation
 진하림|jinhailm|App Development
 권채은|Channny|Design
 
 ##Device that you can use
-	IOS,Mac,MS,Android etc.. 
+	IOS,Mac,MS,Android etc.. <br />
+	Any Device that you can use Internet
 
 ##When you open our Diary<br />
 	1.First Page
