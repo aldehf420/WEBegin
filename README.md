@@ -2,7 +2,7 @@
 ##Team Name : #15-USS Thirtyfive<br />                 					  Team Goal : Make a great web<br />Team Members
 Name| ID   | Role           
 -----|--------|-------------------
-고동현|aldehf420|Front-end
+고동현|aldehf420|Front-end,documentation
 진하림|jinhailm|App Development
 권채은|Channny|Design
 
