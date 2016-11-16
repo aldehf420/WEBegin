@@ -7,7 +7,7 @@ Name| ID   | Role
 권채은|Channny|Design
 
 ##Device that you can use
-	IOS,Mac,MS,Android etc.. <br />
+	IOS,Mac,MS,Android etc..
 	Any Device that you can use Internet
 
 ##When you open our Diary<br />
