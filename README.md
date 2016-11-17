@@ -32,7 +32,7 @@ Name| ID   | Role
 				
 	4.When you click the Budget
 		a.Show balance
-		b.Add money that you can use or used
+		b.Add money that you can use or you already used
 		
 
 
