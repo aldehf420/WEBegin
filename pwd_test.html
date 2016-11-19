@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Welcome Home</title>
+
+<script>
+ function login() {
+  frm = document.getElementById("frm");
+  
+  if (frm.pw.value != "1234") {
+   frm.pw.focus();
+   return;
+   } else {
+   frm.submit();
+     }
+ }
+</script>
+
+<style>
+ .login {
+  width: 150px; height: 17px; position: center;
+ }
+</style>
+</head>
+
+<body>
+  <legend>로그인</legend>
+   <form action="result.html" id="frm" name="frm">
+    <input type="password" name="pw" id="pw" placeholder="비밀번호" class="login" /><br>
+    <input type="button" value="로그인" onclick="login();" class="login" />
+   </form>
+</body>
+</html>
