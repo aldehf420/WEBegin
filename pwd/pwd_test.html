@@ -19,10 +19,17 @@
 </script>
 
 <style>
+  body{
+    font-family: 나눔바른펜,NanumBarunpen,돋움,Dotum;
+    background-image: url(pwd/deviantart_com_20111208_014604.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
  .login {
-  width: 150px; height: 17px;
- }
- @media screen and (max-width:480px) {
+         width: 150px; height: 17px;
+        }
+ @media all and (max-width:500px)  {
         #jb-container {
           width: auto;
         }
@@ -34,14 +41,15 @@
           float: none;
           width: auto;
         }
+        
       }
 </style>
 </head>
-
 <body>
-  <legend>로그인</legend>
+  <legend>Diary </legend>
    <form action="result.html" id="frm" name="frm">
-    <input type="password" name="pw" id="pw" placeholder="비밀번호" class="login" /><br>
+    <input type="password" name="pw" id="pw" placeholder="비밀번호" class="login" />
+    <br>
     <input type="button" value="로그인" onclick="login();" class="login" />
    </form>
 </body>
