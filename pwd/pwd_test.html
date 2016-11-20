@@ -21,14 +21,30 @@
 <style>
   body{
     font-family: 나눔바른펜,NanumBarunpen,돋움,Dotum;
-    background-image: url(pwd/deviantart_com_20111208_014604.jpg);
+    background-image: url(/Users/jinhalim/Desktop/pwd/deviantart_com_20111208_014604.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
- 
  .login {
-         width: 150px; height: 17px;
+          font-size: 18pt;
+          text-align: center;
+         width: 150px; height: 30px;
+         display:inline-block;
+     position:relative;
+     cursor:default;
+          top: 50%;
+     left: 40%;
+     margin-right:-332px;
         }
+  legend{
+    font-size: 90px;
+     display:inline-block;
+     position:relative;
+     cursor:default;
+     top: 50%;
+     left:40%;
+     margin-right:-632px;
+  }      
  @media all and (max-width:500px)  {
         #jb-container {
           width: auto;
@@ -47,6 +63,7 @@
 </head>
 <body>
   <legend>Diary </legend>
+  <br><br><br>
    <form action="result.html" id="frm" name="frm">
     <input type="password" name="pw" id="pw" placeholder="비밀번호" class="login" />
     <br>
