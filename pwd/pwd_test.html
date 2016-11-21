@@ -5,18 +5,16 @@
 <title>Welcome Home</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
- function login() {
-  frm = document.getElementById("frm");
   
-  if (frm.pw.value != "1234") {
-   frm.pw.focus();
-   return;
-   } else {
-   frm.submit();
-     }
- }
-</script>
+  <script>
+    password = prompt("비밀번호");
+    if(password == 1111) {
+      document.location.href = 'test.html';
+    } else { 
+      
+    }
+  </script>
+
 
 <style>
   body{
