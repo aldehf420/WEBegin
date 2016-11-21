@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Welcome Home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+ function login() {
+  frm = document.getElementById("frm");
+  
+  if (frm.pw.value != "1234") {
+   frm.pw.focus();
+   return;
+  } else {
+    frm.submit();
+  }
+ }
+</script>
+
+<style>
+  body{
+    font-family: 나눔바른펜,NanumBarunpen,돋움,Dotum;
+    background-image: url(/Users/kwounchaeeun/Downloads/2013-다이어리145.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ .login {
+    font-size: 18pt;
+    text-align: center;
+    width: 150px; height: 30px;
+
+    position:relative;
+    cursor:default;
+    left: 12%;
+    margin-right:-332px;
+     }
+  legend{
+    font-size: 90px;
+
+    position:relative;
+    cursor:default;
+    color : black;
+
+    left:10%;
+    margin-right:-632px;
+  }      
+ @media all and (max-width:500px)  {
+        #jb-container {
+          width: auto;
+        }
+        #jb-content {
+          float: none;
+          width: auto;
+        }
+        #jb-sidebar {
+          float: none;
+          width: auto;
+        }
+        
+      }
+</style>
+</head>
+<body>
+  <legend><br><br>Simple </br>Diary </legend>
+  <br><br><br>
+   <form action="result.html" id="frm" name="frm">
+   <!--  <input type="password" name="pw" id="pw" placeholder="password" class="login" /> -->
+    <br>
+   <!--  <input type="button" value="login" onclick="login();" class="login" /> -->
+   </form>
+</body>
+</html>
