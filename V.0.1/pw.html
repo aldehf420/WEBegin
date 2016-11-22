@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Welcome Home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+  function login(){
+    while(true){
+    password = prompt("비밀번호를 입력하세요");
+    if(password == 1111) {
+      alert("확인되었습니다.");
+      document.location.href = 'new.html';
+      break;
+    } else { 
+      alert("틀렸습니다.");
+    }
+  }
+}
+</script>
+
+<style>
+  body{
+    font-family: 나눔바른펜,NanumBarunpen,돋움,Dotum;
+    background-image: url(/Users/kwounchaeeun/Downloads/2013-다이어리145.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  img{
+    position:absolute;
+    left:12%;
+    top :30%;
+
+  }
+
+ @media all and (max-width:500px)  {
+        #jb-container {
+          width: auto;
+        }
+        #jb-content {
+          float: none;
+          width: auto;
+        }
+        #jb-sidebar {
+          float: none;
+          width: auto;
+        }
+        
+      }
+</style>
+</head>
+<body>
+  <img src="/Users/kwounchaeeun/Desktop/스크린샷 2016-11-21 오후 4.36.38.png" onclick ="login();"/>
+
+</body>
+</html>
