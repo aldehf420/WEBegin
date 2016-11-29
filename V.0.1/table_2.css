@@ -42,12 +42,17 @@ li a:hover:not(.active) {
     color: white;
     /*선택시 글씨*/
 }
-div{
+/*div{
 
 	margin-left:25%;
 	padding:1px 16px;
 	height:1000px;
+}*/
+a.add{
+		margin-top: 10%; 
+		margin-left:25%;
 }
 textarea{
 		margin-top: 10%; 
+		margin-left:25%;
 }
