@@ -33,7 +33,7 @@ li a {
 }
 
 li a.active {
-    background-color: #4CAF50;
+    background-color: #7C806C;
     color: white;
 }
 
@@ -50,9 +50,11 @@ li a:hover:not(.active) {
 }*/
 a.add{
 		margin-top: 10%; 
-		margin-left:25%;
+		margin-left:30%;
 }
 textarea{
+        font-family: "AppleSDGothicNeo-Thin";
+        font-size : 15pt;
 		margin-top: 10%; 
-		margin-left:25%;
+		margin-left:28%;
 }
