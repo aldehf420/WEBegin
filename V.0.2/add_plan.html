@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="table_3.css">
+	<meta charset="utf-8">
+	<title>일정</title>
+</head>
+
+<body>
+<ul class="main">
+  <li><a href="new.html">캘린더</a></li>
+  <li><a class="active" href="add_plan.html">일정 추가</a></li>
+  <li><a href="add_list.html">가계부</a></li>
+</ul>
+<div>
+<textarea name="text" cols="40" rows="15" wrap="physical"></textarea>
+<br>
+<button class ="add" href="##" onclick="add_cal();">일정추가</button>
+<br>
+<button class ="add" href="##" onclick="add_cal2();">삭제</button>
+<br>
+<button class ="add" href="##" onclick="add_cal3();">추가</button>
+</div>
+<script type="text/javascript">
+	function add_cal(){
+		document.getElementById("plan").innerHTML = text;
+	}
+	var fruits, text, fLen, i;
+	fruits = ["Banana", "Orange", "Apple", "Mango"];
+	fLen = fruits.length;
+	text = "<ul>";
+	for (i = 0; i < fLen; i++) {
+	    text += "<li>" + fruits[i] + "</li>";
+	}
+	text += "</ul>";
+	document.getElementById("plan").innerHTML = text;
+	function add_cal2() {
+	    fruits.pop();
+	    fLen = fruits.length;
+	    text = "<ul>";
+	    for (i = 0; i < fLen; i++) {
+	        text += "<li>" + fruits[i] + "</li>";
+	    }
+	    text += "</ul>";
+	    document.getElementById("plan").innerHTML = text;
+	    //지율때
+	}
+	function add_cal3(){
+		fruits.push("Kiwi");
+	    fLen = fruits.length;
+	    text = "<ul>";
+	    for (i = 0; i < fLen; i++) {
+	        text += "<li>" + fruits[i] + "</li>";
+	    }
+	    text += "</ul>";
+	    document.getElementById("plan").innerHTML = text;
+	}
+</script>
+<p id="plan"></p>
+</body>
+</html>
