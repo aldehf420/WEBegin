@@ -11,9 +11,16 @@ function add(){
 }
 function read(){
 	var day = document.getElementById("getkey").value;
-	var intext = localStorage.setItem(day);
+	var intext = localStorage.getItem(day);
 	alert(intext+day);
-	document.getElementById("getkey").value;
+	document.getElementById("getkey").value="";
+}
+function show(){
+	document.write("day+text"+"<br/>")
+	for(var i=0;i<localStorage;i++){
+		var keyname = localStorage.key(i);
+		document.write(day+localStorage.getItem(keyname)+"<br/>");
+	}
 }
 </script>
  <link rel="stylesheet" type="text/css" href="table_3.css">
@@ -33,7 +40,7 @@ function read(){
 <br>
 <button class ="add" href="##" onclick="add();">일정추가</button>
 <br>
-<button class ="add" href="##" onclick="add_cal2();">삭제</button>
+<button class ="add" href="##" onclick="read();">삭제</button>
 <br>
 <button class ="add" href="##" onclick="add_cal3();">추가</button>
 
