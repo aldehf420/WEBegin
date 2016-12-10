@@ -22,6 +22,26 @@ function show(){
 		document.write(day+localStorage.getItem(keyname)+"<br/>");
 	}
 }
+
+function me(){
+	var text = document.user;
+	alert(text.text1.value);
+	document.getElementById('plan').innerHTML= text.text1.value;
+}
+function my(){
+	var text = document.user;
+	var inday = text.inday.value;
+	var intext = text.text1.value;
+	localStorage.setItem(inday,intext);
+	document.getElementById("inday")="";
+	document.getElementById("intext")="";
+}
+function see(){
+	for(var i=0;i<localStorage;i++){
+		var keyname = localStorage.key(1);
+		document.write(localStorage.getItem(keyname)+"<br/>");
+	}
+}
 </script>
  <link rel="stylesheet" type="text/css" href="table_3.css">
 	<meta charset="utf-8">
@@ -34,19 +54,15 @@ function show(){
   <li><a class="active" href="add_plan.html">일정 추가</a></li>
   <li><a href="add_list.html">가계부</a></li>
 </ul>
-<form id="user">
-<textarea form = "user" name="text" cols="40" rows="15" wrap="physical"></textarea>
+<form name="user">
+<input name= "inday" type="text" value="1">
+<textarea name="text1" cols="40" rows="15" wrap="physical"></textarea>
 </form>
 <br>
-<input type="textarea" cols="40" rows="15">
-<input type="button" value="일정 추가">
-<!-- <button class ="add" href="##" onclick="add();">일정추가</button> -->
+<input type="button" value="일정 추가" onclick="me();">
 <br>
-<input type="button" value="보기">
-<!-- <button class ="add" href="##" onclick="read();">삭제</button> -->
+<input type="button" value="보기" onclick="see();">
 <br>
-<button class ="add" href="##" onclick="add_cal3();">추가</button>
-
-<p id="plan"></p>
+<p id="plan">안녕</p>
 </body>
 </html>
