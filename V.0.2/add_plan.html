@@ -1,32 +1,45 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
 <head>
 <script type="text/javascript">
-function add(){
-	var day = 12;
-	var intext = document.getElementById("text").value;
-	localStorage.setItem(day, intext);
-	document.getElementById("day")="";
-	document.getElementById("intext")="";
-}
-function read(){
-	var day = document.getElementById("getkey").value;
-	var intext = localStorage.getItem(day);
-	alert(intext+day);
-	document.getElementById("getkey").value="";
-}
-function show(){
-	document.write("day+text"+"<br/>")
-	for(var i=0;i<localStorage;i++){
-		var keyname = localStorage.key(i);
-		document.write(day+localStorage.getItem(keyname)+"<br/>");
-	}
-}
+// if( ('localStorage' in window) && window['localStorage'] !== null) {
+//     alert("현재 브라우저는 WebStorage를 지원합니다")
+// }
+// else{
+//     alert("현재 브라우저는 WebStorage를 지원하지 않습니다")
+// }
+// function add(){
+// 	var day = 12;
+// 	var intext = document.getElementById("text").value;
+// 	localStorage.setItem(day, intext);
+// 	document.getElementById("day")="";
+// 	document.getElementById("intext")="";
+// }
+// function read(){
+// 	var day = document.getElementById("getkey").value;
+// 	var intext = localStorage.getItem(day);
+// 	alert(intext+day);
+// 	document.getElementById("getkey").value="";
+// }
+// function show(){
+// 	document.write("day+text"+"<br/>")
+// 	for(var i=0;i<localStorage;i++){
+// 		var keyname = localStorage.key(i);
+// 		document.write(day+localStorage.getItem(keyname)+"<br/>");
+// 	}
+// }
 
 function me(){
-	var text = document.user;
-	alert(text.text1.value);
-	document.getElementById('plan').innerHTML= text.text1.value;
+	// var text = document.user;
+	// alert(text.text1.value);
+	var text = document.getElementById("text1").value;
+	var inday = document.getElementById("inday").value;
+	// alert(inday+"\n"+text); 출력 확인 
+	localStorage.setItem(inday,text);
+	alert(localStorage.getItem(localStorage.key(0)));출력확인
+	// document.getElementById('plan').innerHTML= text.text1.value;
+	document.getElementById("inday")="";
+	document.getElementById("text1")="";
 }
 function my(){
 	var text = document.user;
@@ -36,10 +49,12 @@ function my(){
 	document.getElementById("inday")="";
 	document.getElementById("intext")="";
 }
+
 function see(){
-	for(var i=0;i<localStorage;i++){
-		var keyname = localStorage.key(1);
-		document.write(localStorage.getItem(keyname)+"<br/>");
+	for(var i=0;i<localStorage.length;i++){
+		var keyname = localStorage.key(i);
+		document.write(day+localStorage.getItem(keyname)+"<br/>");
+		// document.getElementById("plan").innerHTML = localStorage.getItem(keyname)+"<br/>";
 	}
 }
 </script>
@@ -55,8 +70,8 @@ function see(){
   <li><a href="add_list.html">가계부</a></li>
 </ul>
 <form name="user">
-<input name= "inday" type="text" value="1">
-<textarea name="text1" cols="40" rows="15" wrap="physical"></textarea>
+<input id= "inday" type="text" value="1">
+<textarea id="text1" cols="40" rows="15" wrap="physical"></textarea>
 </form>
 <br>
 <input type="button" value="일정 추가" onclick="me();">
