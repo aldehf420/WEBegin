@@ -32,15 +32,21 @@
 function me(){
 	// var text = document.user;
 	// alert(text.text1.value);
+	var add = document.getElementById("plan");
 	var text = document.getElementById("text1").value;
 	var inday = document.getElementById("inday").value;
 	// alert(inday+"\n"+text); 출력 확인 
 	localStorage.setItem(inday,text);
-	alert(localStorage.getItem(localStorage.key(0)));출력확인
-	// document.getElementById('plan').innerHTML= text.text1.value;
 	document.getElementById("inday")="";
 	document.getElementById("text1")="";
+	// alert(localStorage.getItem(localStorage.key(0)));출력확인
+	for(var i = 0;i<localStorage.length;i++){
+		var keyname = localStorage.key(i);
+		add.innerHTML = localStorage.getItem(keyname)+"<br/>";
+	}
+	// document.getElementById('plan').innerHTML= text.text1.value;
 }
+
 function my(){
 	var text = document.user;
 	var inday = text.inday.value;
