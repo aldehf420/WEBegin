@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="table_3.css">
+	<meta charset="utf-8">
+	<title>가계부</title>
+</head>
+<script type="text/javascript">
+	function save_num() {
+		var 
+		var sum = 0;
+		var num = document.getElementById("num").value;
+        if (sessionStorage.clickcount) {
+            sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+        } else {
+            sessionStorage.clickcount = 1;
+        }
+        localStorage.setItem(sessionStorage.clickcount,num);
+        document.getElementById("num").value = "";
+        for(var i = 0;i<localStorage.length;i++){
+			var keyname = localStorage.key(i);
+			alert(keyname+"-"+localStorage.getItem(keyname));
+			sum = Numer(localStorage.getItem(keyname));
+		}
+		alert(sum);
+	}
+	function remove_num(){
+		localStorage.clear();
+	}
+</script>
+<body>
+<ul class="main">
+  <li><a href="new.html">캘린더</a></li>
+  <li><a href="add_plan.html">일정 추가</a></li>
+  <li><a class="active" href="add_list.html">가계부</a></li>
+</ul>
+<input type="number" id="num">
+<input type="button" id="save" onclick="save_num()" value="저장">
+<input type="button" id="remove" onclick="remove_num()" value="초기화">
+<table id="money">
+</table>
+<p id="sum"></p>
+</body>
+</html>
