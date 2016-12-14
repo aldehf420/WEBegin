@@ -64,6 +64,17 @@ Name| ID   | Role
 Main Page
 <img src = "https://github.com/aldehf420/WEBegin/blob/master/screenshots/main.png"heght="200" >
 
+input PW 
+<img src = "https://github.com/aldehf420/WEBegin/blob/master/screenshots/pw.png"heght="200" >
+
+If you discorrect PW
+<img src = "https://github.com/aldehf420/WEBegin/blob/master/screenshots/discorrect.png"heght="200" >
+
+If you correct PW move to Calendar
+<img src = "https://github.com/aldehf420/WEBegin/blob/master/screenshots/calendar.png"heght="200" >
+
+At Calendar When you click dates
+<img src = "https://github.com/aldehf420/WEBegin/blob/master/screenshots/addDiary.png"heght="200" >
 ###Summary
 	You can use our diary at Anywhere,Anytime and Any Device.
 	Here are the functions of our Diary
@@ -73,4 +84,4 @@ Main Page
 		4.And Simple.
 
 
-<img src = "https://github.com/aldehf420/WEBegin/blob/master/photo-1456324504439-367cee3b3c32.jpeg"heght="200" >
+<!-- <img src = "https://github.com/aldehf420/WEBegin/blob/master/photo-1456324504439-367cee3b3c32.jpeg"heght="200" > -->
