@@ -1,5 +1,10 @@
 #Welcome to Our Project!
-##Team Name : #15-USS Thirtyfive<br />                 					  Team Goal : Make a great web<br />Team Members
+##Project Name : Simple Diary<br />
+##Team Name : #15-USS Thirtyfive<br />                 					  
+##Team Goal : Make a great web<br />
+##Team Members
+
+
 Name| ID   | Role           
 -----|--------|-------------------
 고동현|aldehf420|Front-end,Documentation
@@ -9,6 +14,9 @@ Name| ID   | Role
 ##Device that you can use
 	IOS,Mac,MS,Android etc..
 	Any Device that you can use Internet
+
+##We used HTML,CSS,JS,PHP,MYSQL
+
 
 ##When you open our Diary<br />
 	1.First Page
