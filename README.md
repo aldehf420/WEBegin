@@ -15,7 +15,25 @@ Name| ID   | Role
 	IOS,Mac,MS,Android etc..
 	Any Device that you can use Internet
 
-##We used HTML,CSS,JS,PHP,MYSQL
+##Project's Purpose
+	To make a diary, which is very light and simple
+
+##Purpose's Extra Explanation
+	This is our first attempt to make web.
+	So we try to make a web which has only fundamental functions.
+
+##We used
+	HTML for basic web  
+	CSS for Style
+	JS for Login
+	PHP,MySQL for Connect Server
+
+##Our License is GPL-3.0
+	1.You may use the computer program for any purpose. However, it can not restrict the act to the law.
+	2.A running copy of a computer program must always be sold with the program's source code or distributed free of charge.
+	3.You can change the source code of a computer program according to its purpose.
+	4.The modified computer program must also distribute the source code of the program publicly.
+	5.Modified computer programs must also have the GPL license.
 
 
 ##When you open our Diary<br />
@@ -42,8 +60,9 @@ Name| ID   | Role
 		a.Show balance
 		b.Add money that you can use or you already used
 		
-
-
+##Result
+Main Page
+<img src = "https://github.com/aldehf420/WEBegin/blob/master/screenshots/main.png"heght="200" >
 
 ###Summary
 	You can use our diary at Anywhere,Anytime and Any Device.
