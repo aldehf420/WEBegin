@@ -1,5 +1,7 @@
 #Welcome to Our Project!
-##Team Name : #15-USS Thirtyfive<br />                 					  Team Goal : Make a great web<br />Team Members
+##Team Name : #15-USS Thirtyfive<br />
+Team Goal : Make a great web<br />
+Team Members
 Name| ID   | Role           
 -----|--------|-------------------
 고동현|aldehf420|Front-end,Documentation
