@@ -26,7 +26,6 @@ Name| ID   | Role
 	HTML for basic web  
 	CSS for Style
 	JS for Login
-	PHP,MySQL for Connect Server
 
 ##Our License is GPL-3.0
 	1.You may use the computer program for any purpose. However, it can not restrict the act to the law.
