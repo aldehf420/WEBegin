@@ -1,0 +1,60 @@
+a{
+	font-family: "AppleSDGothicNeo-Thin";
+    color: black;
+    font-size: 15pt;
+    text-decoration:none;
+}
+
+body{           
+	background-image:url(투명배경.png) ;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #7C806C;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    /*선택시 글씨*/
+}
+/*div{
+
+	margin-left:25%;
+	padding:1px 16px;
+	height:1000px;
+}*/
+a.add{
+		margin-top: 10%; 
+		margin-left:30%;
+}
+textarea{
+        font-family: "AppleSDGothicNeo-Thin";
+        font-size : 15pt;
+		margin-top: 10%; 
+		margin-left:28%;
+}

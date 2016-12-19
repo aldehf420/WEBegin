@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+<html>
+<meta charset="UTF-8">
+<head>
+<script type="text/javascript">
+	date = location.search;
+	date = date.substring(1,location.search.length);//date 에서 1~location.search.length의 사이의 문자열을 찾아 저장한다.
+	date = date.split("&");//&을 기준으로 분활
+function setRemind() {
+			var rdate = date[0] + date[1];
+			var rvalue = "";
+			
+			//textbox is empty
+			if(document.user.txtbox.value == "") {
+				alert("일정이 없습니다.");//일정이 업ㅂ씁니다.
+				document.user.txtbox.focus();
+			//textbox has a reminder
+			} else {
+				rvalue = document.user.txtbox.value;
+				
+				//set the cookie
+				var expiration = new Date();//
+				var twoweeks = expiration.getTime() + (14 * 24 * 60 * 60 * 1000);//1000,60초,60분,24시,2주(14일)
+				expiration.setTime(twoweeks);
+				
+				//if a new cookie
+				if(getCookie(rdate) == "" || getCookie(rdate) == null) {
+					setCookie(rdate, rvalue, expiration);
+				//if an existing cookie, append new reminder
+				} else {
+					oldvalue = getCookie(rdate);
+					oldvalue += "|" + rvalue;
+					setCookie(rdate, oldvalue, expiration);
+				}
+				
+				//go back to day scheduler
+				document.location = "day_show.html?" + date[0] + "&" + date[1];
+				//show results on calendar
+				window.opener.location = "new.html";
+			}
+		}
+
+</script>
+ <link rel="stylesheet" type="text/css" href="table_3.css">
+	<meta charset="utf-8">
+	<title>일정</title>
+</head>
+<body>
+
+<ul class="main">
+  <li><a href="new.html">캘린더</a></li>
+   <li>
+  <script language="javascript">
+		document.write("<a href='day_show.html?" + date[0] + "&" + date[1] + "'>일정</a>");
+	</script>
+ </li>
+  <li>
+   <script language="javascript">
+		document.write("<a href='add_plan.html?" + date[0] + "&" + date[1] + "'>일정추가</a>");
+	</script>
+ </li>
+  <li><a href="add_list.html">가계부</a></li>
+  <li><a href="###" onclick="javascript:self.close();">나가기</a></li>
+</ul>
+<form name="user">
+<textarea name="txtbox" cols="40" rows="15" wrap="physical"></textarea>
+</form>
+<br>
+<a href="javascript:setRemind();">:::::::::::::: 일정추가 :::</a>
+<br>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>일정보는 곳</title>
+	<script type="text/javascript">
+		date = location.search;
+		date = date.substring(1,location.search.length);
+		date = date.split("&");
+		if(!document.cookie || document.cookie == null) {
+			dayschedule = "<tr><td valign='top' align='center'>::: 오늘의 일정은 없어요 :::</td></tr>";
+		} else {
+			rdate = date[0]+date[1];
+			remind = getCookie(rdate);
+			
+			//if there is a cookie but none for that date
+			if(remind == "" || remind == null) {
+				dayschedule = "<tr><td valign='top' align='center'>::: 오늘의 일정은 없어요 :::</td></tr>";
+			//there is a cookie for that date
+			} else {
+				//find number of reminders and set variable
+				if(remind.indexOf("|")) {
+					remind = remind.split("|");
+					rlen = remind.length;
+				} else {
+					rlen = 1;
+				}
+				
+				var displaytext = "";
+				var currenttext = "";
+				
+				//write out reminders on page
+				for(var i = 0;i < rlen; i++) {
+				
+					currenttext = remind[i];
+					
+					//if the reminder is a long string without spaces, add break after every 20 characters
+					if((currenttext.length - 1) > 25 && currenttext.indexOf(" ") < 0) {
+						
+						for(var x = 0; x <= currenttext.length; x++) {
+							
+							if(x != 0 && (x % 20) == 0) {
+								displaytext += "<br>" + currenttext.substring(x,x+1);
+							} else {
+								displaytext += currenttext.substring(x,x+1);
+							}
+						}
+					} else {
+						displaytext = currenttext;
+					}
+					
+					dayschedule += "<tr>";
+					dayschedule += "<td valign='top'>";
+					dayschedule += (i + 1) + ". ";
+					dayschedule += "</td>";
+					dayschedule += "<td align='center'><input type='checkbox' name='ckbox" + i + "' value=''></td>";
+					dayschedule += "</tr>";
+				}
+			}
+		}
+	</script>
+</head>
+<link rel="stylesheet" type="text/css" href="table_3.css">
+<body>
+<ul class="main">
+  <li><a href="new.html">캘린더</a></li>
+  <li>
+  <script language="javascript">
+		document.write("<a href='day_show.html?" + date[0] + "&" + date[1] + "'>일정</a>");
+	</script>
+ </li>
+  <li>
+   <script language="javascript">
+		document.write("<a href='add_plan.html?" + date[0] + "&" + date[1] + "'>일정추가</a>");
+	</script>
+ </li>
+  <li><a href="add_list.html">가계부</a></li>
+  <li><a href="###" onclick="javascript:self.close();">나가기</a></li>
+</ul>
+<form>
+<script language="javascript">
+
+	document.write(datestamp);
+
+</script>
+
+<div align="center">
+<br>
+<table>
+<tr>
+	<td valign="top" align="center">
+	<table>
+	<tr>
+		<td align="center">
+		<table bgcolor="#eeeeee" width="100%" border="0" cellpadding="3" cellspacing="0">
+			<script language="javascript">
+				document.write(dayschedule);
+			</script>
+		</table>
+		</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+</table>
+
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html5>
+<html>
+<head>
+
+ <link rel="stylesheet" type="text/css" href="table_3.css">
+	<meta charset="utf-8">
+	<title>일정</title>
+</head>
+<body>
+<!-- <script type="text/javascript">
+function createFile(){
+	var text = document.getElementById("text1").value;
+	var fileObject = new ActiveXObject("Scripting.FileSystemObject");
+	fWrite = fileObject.createTextFile("/Users/jinhalim/Desktop/add1.txt",True);
+	fWrite.write(txt+"</body><html>");
+	fWrite.close();
+}
+function showFile(){
+	var filename = "add1.txt";
+	var fileObject = new ActiveXObject("Scripting.FileSystemObject")
+
+	var fOpen = fileObject.OpenTextFile(filename,1);
+	document.getElementById("plan").innerHTML="";
+	while(!Open.AtEndOfStream){
+		document.getElementById("plan").innerHTML+=fOpen.Readline();
+	}
+	fOpen.close();
+}
+</script> -->
+<script type="text/javascript">
+    var fso=new ActiveXObject("Scripting.FileSystemObject");
+    var filename="/Users/jinhalim/Desktop/text.txt";
+    function savefile() {
+        if (!fso.FileExists(filename)) {
+            fso.CreateTextFile(filename,true);
+        }
+        var f=fso.OpenTextFile(filename,2,true);
+        f.Write(myarea.innerHTML);
+        f.Close();
+    }
+	function loadfile() {
+        
+		if (!fso.FileExists(filename)) {
+	            
+		fso.CreateTextFile(filename,true);
+	        
+		}
+	        var f=fso.OpenTextFile(filename,1);
+	        r=f.ReadAll();
+	        f.Close();
+	        myarea.innerHTML=r;
+	    }
+	}		   
+    
+	function window.onload() {
+	        loadfile(filename);
+	    
+	}
+</script>
+<div id=myarea contenteditable=true style="width:320;height:240;border:solid 2 inset;overflow:scroll;background-color:silver;"></div>
+<br>
+<input type=button value=load onclick="loadfile()"">
+<input type=button value=save onclick="savefile()"">
+<ul class="main">
+  <li><a href="new.html">캘린더</a></li>
+  <li><a class="active" href="add_plan.html">일정 추가</a></li>
+  <li><a href="add_list.html">가계부</a></li>
+</ul>
+<form name="user">
+<input id= "inday" type="text" value="1">
+<textarea id="text1" name = "text" cols="40" rows="15" wrap="physical"></textarea>
+</form>
+<br>
+<input type="button" value="일정 추가" onclick="createFile();">
+<br>
+<input type="button" value="보기" onclick="showFile();">
+<br>
+<p id="plan">안녕</p>
+</body>
+</html>

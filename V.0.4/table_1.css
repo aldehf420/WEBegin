@@ -1,0 +1,41 @@
+a{
+	font-family: "AppleSDGothicNeo-Thin";
+    color: black;
+    font-size: 15pt;
+    text-decoration:none;
+}
+table{
+		font-family: "AppleSDGothicNeo-Thin";
+		margin-top: 5%; 
+		margin-left: 8%;
+		width: 600px;
+		height: 500px;
+/*		text-align:center;*/
+}
+td{
+	font-size: 18pt;
+}
+h1{
+	font-family: "AppleSDGothicNeo-light";
+	font-size: 34pt;
+	font-style: italic;
+	font-weight: 700; 
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+/*img{
+	opacity: 0.3;
+}*/
+
+body{           
+	background-image:url(투명배경.png) ;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/*background-image{
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier 
+}*/
