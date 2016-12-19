@@ -25,14 +25,14 @@ function setCookie(name, value, expires, path, domain, secure) {
 }
 
 //Delete Cookie Function
-function delCookie (name,path,domain) {
-	if (getCookie(name)) {
-		document.cookie = name + "=" +
-		((path == null) ? "" : "; path=" + path) +
-		((domain == null) ? "" : "; domain=" + domain) +
-		"; expires=Thu, 01-Jan-70 00:00:01 GMT";
-	}
-}
+// function delCookie (name,path,domain) {
+// 	if (getCookie(name)) {
+// 		document.cookie = name + "=" +
+// 		((path == null) ? "" : "; path=" + path) +
+// 		((domain == null) ? "" : "; domain=" + domain) +
+// 		"; expires=Thu, 01-Jan-70 00:00:01 GMT";
+// 	}
+// }
 
 //Get Advertisement from Array Function
 function getAdv(name) {
