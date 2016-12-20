@@ -21,30 +21,19 @@ function setCookie(name, value, expires, path, domain, secure) {
 	((expires == null) ? "" : "; expires=" + expires.toGMTString()) +
 	((path == null) ? "" : "; path=" + path) +
 	((domain == null) ? "" : "; domain=" + domain) +
-	((secure == null) ? "" : "; secure");
+	((secur옴 == null) ? "" : "; secure");
 }
 
-//Delete Cookie Function
-// function delCookie (name,path,domain) {
-// 	if (getCookie(name)) {
-// 		document.cookie = name + "=" +
-// 		((path == null) ? "" : "; path=" + path) +
-// 		((domain == null) ? "" : "; domain=" + domain) +
-// 		"; expires=Thu, 01-Jan-70 00:00:01 GMT";
-// 	}
-// }
-
-//Get Advertisement from Array Function
-function getAdv(name) {
-	var adv = "";
+// function getAdv(name) {
+// 	var adv = "";
 	
-	for(var i = 0;i < seglist.length ;i+=3) {
-		if(name == seglist[i]) {
-			adv = seglist[i + 2];
+// 	for(var i = 0;i < seglist.length ;i+=3) {
+// 		if(name == seglist[i]) {
+// 			adv = seglist[i + 2];
 			
-			return adv;
-		}
-	}
+// 			return adv;
+// 		}
+// 	}
 	
-	return null;
-}
+// 	return null;
+// }

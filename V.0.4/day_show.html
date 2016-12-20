@@ -4,13 +4,11 @@
 <meta charset="UTF-8">
 	<title>일정보는 곳</title>
 	<script type="text/javascript">
-		date = location.search;
-		date = date.substring(1,location.search.length);
-		date = date.split("&");
+		date = location.search.substring(1);
 		if(!document.cookie || document.cookie == null) {
 			dayschedule = "<tr><td valign='top' align='center'>::: 오늘의 일정은 없어요 :::</td></tr>";
 		} else {
-			rdate = date[0]+date[1];
+			rdate = date;
 			remind = getCookie(rdate);
 			
 			//if there is a cookie but none for that date
@@ -66,7 +64,7 @@
   <li><a class="active">일정</a></li>
   <li>
    <script language="javascript">
-		document.write("<a href='add_plan.html?" + date[0] + "&" + date[1] + "'>일정추가</a>");
+		document.write("<a href='add_plan.html?'+ location.search.substring(1)>일정추가</a>");
 	</script>
  </li>
   <li><a href="add_list.html">가계부</a></li>
